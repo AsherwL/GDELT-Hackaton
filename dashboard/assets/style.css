@@ -383,3 +383,84 @@ h3 {
     font-family: 'Inter', sans-serif;
     text-transform: uppercase;
 }
+
+/* Sidebar Navigation Enhancement */
+[data-testid="stSidebarNav"] {
+    padding-top: 2rem;
+}
+
+[data-testid="stSidebarNav"] ul {
+    gap: 8px;
+}
+
+[data-testid="stSidebarNav"] li {
+    background: transparent;
+    border-radius: 8px;
+    margin: 4px 12px;
+    transition: all 0.3s ease;
+}
+
+[data-testid="stSidebarNav"] li:hover {
+    background: rgba(88, 166, 255, 0.1);
+    transform: translateX(5px);
+}
+
+[data-testid="stSidebarNav"] li [data-testid="stSidebarNavSeparator"] {
+    display: none;
+}
+
+/* Responsive Design Queries */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.2rem;
+        letter-spacing: -1px;
+    }
+    
+    h2 {
+        font-size: 1.6rem;
+    }
+    
+    h3 {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+
+    .status-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        padding: 15px;
+    }
+
+    .insight-box {
+        padding: 20px;
+        margin: 20px 0;
+    }
+
+    .insight-box p {
+        font-size: 1rem;
+    }
+
+    [data-testid="stMetricValue"] {
+        font-size: 1.8rem;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .prediction-table th, .prediction-table td {
+        padding: 10px 8px;
+        font-size: 0.8rem;
+    }
+
+    .dominance-header {
+        font-size: 0.9rem;
+    }
+    
+    .status-text {
+        font-size: 0.9rem;
+    }
+}
